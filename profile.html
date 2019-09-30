@@ -24,8 +24,9 @@
                 <ul class="nav navbar-nav text-light" id="accordionSidebar">
                     <li class="nav-item" role="presentation"></li>
                     <li class="nav-item" role="presentation"><a class="nav-link active" href="dashboard.html"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="emp-mgmt.html"><i class="fas fa-window-maximize"></i><span>Employees</span></a><a class="nav-link active" href="profile.html"><i class="fas fa-user"></i><span>Profile</span></a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="table.html"><i class="fas fa-table"></i><span>Table</span></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="emp-mgmt.html"><i class="fas fa-window-maximize"></i><span>Employees</span></a><a class="nav-link active" href="profile.html"><i class="fas fa-user"></i><span>New Patient</span></a></li>
+                    <li class="nav-item"
+                        role="presentation"><a class="nav-link" href="table.html"><i class="fas fa-table"></i><span>Table</span></a></li>
                     <li class="nav-item" role="presentation"></li>
                     <li class="nav-item" role="presentation"></li>
                 </ul>
@@ -135,39 +136,29 @@
                     </div>
                 </nav>
                 <div class="container-fluid">
-                    <h3 class="text-dark mb-4">Profile</h3>
+                    <h3 class="text-dark mb-4">Create Patient Profile</h3>
                     <div class="row mb-3">
                         <div class="col-lg-4">
-                            <div class="card mb-3">
-                                <div class="card-body text-center shadow"><img class="rounded-circle mb-3 mt-4" src="assets/img/dogs/image2.jpeg" width="160" height="160">
-                                    <div class="mb-3"><button class="btn btn-primary btn-sm" type="button">Change Photo</button></div>
-                                </div>
-                            </div>
-                            <div class="card shadow mb-4">
+                            <div class="card">
                                 <div class="card-header py-3">
-                                    <h6 class="text-primary font-weight-bold m-0">Projects</h6>
+                                    <p class="text-primary m-0 font-weight-bold">Basic Details</p>
                                 </div>
                                 <div class="card-body">
-                                    <h4 class="small font-weight-bold">Server migration<span class="float-right">20%</span></h4>
-                                    <div class="progress progress-sm mb-3">
-                                        <div class="progress-bar bg-danger" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;"><span class="sr-only">20%</span></div>
-                                    </div>
-                                    <h4 class="small font-weight-bold">Sales tracking<span class="float-right">40%</span></h4>
-                                    <div class="progress progress-sm mb-3">
-                                        <div class="progress-bar bg-warning" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;"><span class="sr-only">40%</span></div>
-                                    </div>
-                                    <h4 class="small font-weight-bold">Customer Database<span class="float-right">60%</span></h4>
-                                    <div class="progress progress-sm mb-3">
-                                        <div class="progress-bar bg-primary" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"><span class="sr-only">60%</span></div>
-                                    </div>
-                                    <h4 class="small font-weight-bold">Payout Details<span class="float-right">80%</span></h4>
-                                    <div class="progress progress-sm mb-3">
-                                        <div class="progress-bar bg-info" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"><span class="sr-only">80%</span></div>
-                                    </div>
-                                    <h4 class="small font-weight-bold">Account setup<span class="float-right">Complete!</span></h4>
-                                    <div class="progress progress-sm mb-3">
-                                        <div class="progress-bar bg-success" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"><span class="sr-only">100%</span></div>
-                                    </div>
+                                    <form>
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <div class="form-group"><label for="patientId"><strong>Patient Id</strong><br></label><input class="form-control" type="tel" inputmode="numeric" minlength="3" maxlength="6" required="" autofocus="" placeholder="3-6 digits" name="patientId"></div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-group"><label for="phoneNo"><strong>Mobile Number</strong><br></label><input class="form-control" type="tel" name="phoneNo" inputmode="numeric" minlength="10" maxlength="10" required="" autofocus="" placeholder="mobile num"></div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col"></div>
+                                            <div class="col"></div>
+                                        </div>
+                                        <div class="form-group"></div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -206,67 +197,53 @@
                                 <div class="col">
                                     <div class="card shadow mb-3">
                                         <div class="card-header py-3">
-                                            <p class="text-primary m-0 font-weight-bold">User Settings</p>
+                                            <p class="text-primary m-0 font-weight-bold">Secondary Details</p>
+                                            <p class="text-primary m-0 font-weight-bold"></p>
                                         </div>
                                         <div class="card-body">
                                             <form>
                                                 <div class="form-row">
                                                     <div class="col">
-                                                        <div class="form-group"><label for="username"><strong>Username</strong></label><input class="form-control" type="text" placeholder="user.name" name="username"></div>
+                                                        <div class="form-group"><label for="first_name"><strong>Patient Name</strong></label><input class="form-control" type="text" placeholder="Babu rao" name="patientName" style="margin: -7px;"></div>
                                                     </div>
                                                     <div class="col">
-                                                        <div class="form-group"><label for="email"><strong>Email Address</strong></label><input class="form-control" type="email" placeholder="user@example.com" name="email"></div>
+                                                        <div class="form-group">
+                                                            <div class="col"><label for="dob" style="height: 0px;"><strong>Date of Birth</strong></label><input class="form-control form-control-lg d-flex justify-content-center align-items-center align-content-center" type="date"
+                                                                    name="dob" style="font-size: 16px;margin: 0px;height: 38px;" required=""></div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="form-row">
                                                     <div class="col">
-                                                        <div class="form-group"><label for="first_name"><strong>First Name</strong></label><input class="form-control" type="text" placeholder="John" name="first_name"></div>
+                                                        <div id="dataTable_length" class="dataTables_length" aria-controls="dataTable"><label for="bloodGroup">&nbsp;Blood Group<select class="form-control form-control form-control-sm custom-select custom-select-sm"><option value="null" selected="">Select</option><option value="O-" selected="">O-</option><option value="O+">O+</option><option value="A-">A-</option><option value="100">A+</option><option value="B-">B-</option><option value="B+">B+</option><option value="AB-">AB-</option><option value="AB+">AB+</option></select>&nbsp;</label></div>
                                                     </div>
                                                     <div class="col">
-                                                        <div class="form-group"><label for="last_name"><strong>Last Name</strong></label><input class="form-control" type="text" placeholder="Doe" name="last_name"></div>
+                                                        <div id="dataTable_length" class="dataTables_length" aria-controls="dataTable"><label style="margin: 2px;" for="gender">Gender&nbsp;<select class="form-control form-control form-control-sm custom-select custom-select-sm"><option value="Male" selected="">Male</option><option value="Female">Female</option><option value="Other">Rather not say</option></select>&nbsp;</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="form-group"><button class="btn btn-primary btn-sm" type="submit">Save Settings</button></div>
+                                                <div class="form-group"></div>
                                             </form>
                                         </div>
                                     </div>
                                     <div class="card shadow">
                                         <div class="card-header py-3">
-                                            <p class="text-primary m-0 font-weight-bold">Contact Settings</p>
+                                            <p class="text-primary m-0 font-weight-bold">Address</p>
                                         </div>
                                         <div class="card-body">
                                             <form>
-                                                <div class="form-group"><label for="address"><strong>Address</strong></label><input class="form-control" type="text" placeholder="Sunset Blvd, 38" name="address"></div>
+                                                <div class="form-group"><label for="address"><strong>Address</strong></label><input class="form-control" type="text" name="address"></div>
                                                 <div class="form-row">
                                                     <div class="col">
-                                                        <div class="form-group"><label for="city"><strong>City</strong></label><input class="form-control" type="text" placeholder="Los Angeles" name="city"></div>
+                                                        <div class="form-group"><label for="district"><strong>District</strong></label><input class="form-control" type="text" name="district"></div>
                                                     </div>
                                                     <div class="col">
-                                                        <div class="form-group"><label for="country"><strong>Country</strong></label><input class="form-control" type="text" placeholder="USA" name="country"></div>
+                                                        <div class="form-group"><label for="state"><strong>State</strong></label><input class="form-control" type="text" name="state"></div>
                                                     </div>
                                                 </div>
-                                                <div class="form-group"><button class="btn btn-primary btn-sm" type="submit">Save&nbsp;Settings</button></div>
+                                                <div class="form-group"><button class="btn btn-primary" type="submit">Save</button></div>
                                             </form>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card shadow mb-5">
-                        <div class="card-header py-3">
-                            <p class="text-primary m-0 font-weight-bold">Forum Settings</p>
-                        </div>
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <form>
-                                        <div class="form-group"><label for="signature"><strong>Signature</strong><br></label><textarea class="form-control" rows="4" name="signature"></textarea></div>
-                                        <div class="form-group">
-                                            <div class="custom-control custom-switch"><input class="custom-control-input" type="checkbox" id="formCheck-1"><label class="custom-control-label" for="formCheck-1"><strong>Notify me about new replies</strong></label></div>
-                                        </div>
-                                        <div class="form-group"><button class="btn btn-primary btn-sm" type="submit">Save Settings</button></div>
-                                    </form>
                                 </div>
                             </div>
                         </div>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Table - Panch-Karm Clinic</title>
+    <title>Profile - Panch-Karm Clinic</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
@@ -24,8 +24,9 @@
                 <ul class="nav navbar-nav text-light" id="accordionSidebar">
                     <li class="nav-item" role="presentation"></li>
                     <li class="nav-item" role="presentation"><a class="nav-link active" href="dashboard.html"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="emp-mgmt.html"><i class="fas fa-window-maximize"></i><span>Employees</span></a><a class="nav-link" href="newpatient.html"><i class="fas fa-user"></i><span>New Patient</span></a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="table.html"><i class="fas fa-table"></i><span>Table</span></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="emp-mgmt.html"><i class="fas fa-window-maximize"></i><span>Employees</span></a><a class="nav-link active" href="newpatient.html"><i class="fas fa-user"></i><span>New Patient</span></a></li>
+                    <li class="nav-item"
+                        role="presentation"><a class="nav-link" href="table.html"><i class="fas fa-table"></i><span>Table</span></a></li>
                     <li class="nav-item" role="presentation"></li>
                     <li class="nav-item" role="presentation"></li>
                 </ul>
@@ -135,140 +136,114 @@
                     </div>
                 </nav>
                 <div class="container-fluid">
-                    <h3 class="text-dark mb-4">Team</h3>
-                    <div class="card shadow">
-                        <div class="card-header py-3">
-                            <p class="text-primary m-0 font-weight-bold">Employee Info</p>
+                    <h3 class="text-dark mb-4">Create Patient Profile</h3>
+                    <div class="row mb-3">
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <div class="card-header py-3">
+                                    <p class="text-primary m-0 font-weight-bold">Basic Details</p>
+                                </div>
+                                <div class="card-body">
+                                    <form>
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <div class="form-group"><label for="patientId"><strong>Patient Id</strong><br></label><input class="form-control" type="tel" inputmode="numeric" minlength="3" maxlength="6" required="" autofocus="" placeholder="3-6 digits" name="patientId"></div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-group"><label for="phoneNo"><strong>Mobile Number</strong><br></label><input class="form-control" type="tel" name="phoneNo" inputmode="numeric" minlength="10" maxlength="10" required="" autofocus="" placeholder="mobile num"></div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col"></div>
+                                            <div class="col"></div>
+                                        </div>
+                                        <div class="form-group"></div>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-6 text-nowrap">
-                                    <div id="dataTable_length" class="dataTables_length" aria-controls="dataTable"><label>Show&nbsp;<select class="form-control form-control-sm custom-select custom-select-sm"><option value="10" selected="">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select>&nbsp;</label></div>
+                        <div class="col-lg-8">
+                            <div class="row mb-3 d-none">
+                                <div class="col">
+                                    <div class="card text-white bg-primary shadow">
+                                        <div class="card-body">
+                                            <div class="row mb-2">
+                                                <div class="col">
+                                                    <p class="m-0">Peformance</p>
+                                                    <p class="m-0"><strong>65.2%</strong></p>
+                                                </div>
+                                                <div class="col-auto"><i class="fas fa-rocket fa-2x"></i></div>
+                                            </div>
+                                            <p class="text-white-50 small m-0"><i class="fas fa-arrow-up"></i>&nbsp;5% since last month</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="text-md-right dataTables_filter" id="dataTable_filter"><label><input type="search" class="form-control form-control-sm" aria-controls="dataTable" placeholder="Search" autocomplete="on"></label></div>
+                                <div class="col">
+                                    <div class="card text-white bg-success shadow">
+                                        <div class="card-body">
+                                            <div class="row mb-2">
+                                                <div class="col">
+                                                    <p class="m-0">Peformance</p>
+                                                    <p class="m-0"><strong>65.2%</strong></p>
+                                                </div>
+                                                <div class="col-auto"><i class="fas fa-rocket fa-2x"></i></div>
+                                            </div>
+                                            <p class="text-white-50 small m-0"><i class="fas fa-arrow-up"></i>&nbsp;5% since last month</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="table-responsive table mt-2" id="dataTable" role="grid" aria-describedby="dataTable_info">
-                                <table class="table dataTable my-0" id="dataTable">
-                                    <thead>
-                                        <tr>
-                                            <th>Name</th>
-                                            <th>Position</th>
-                                            <th>Office</th>
-                                            <th>Age</th>
-                                            <th>Start date</th>
-                                            <th>Salary</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td><img class="rounded-circle mr-2" width="30" height="30" src="assets/img/avatars/avatar1.jpeg">Airi Satou</td>
-                                            <td>Accountant</td>
-                                            <td>Tokyo</td>
-                                            <td>33</td>
-                                            <td>2008/11/28</td>
-                                            <td>$162,700</td>
-                                        </tr>
-                                        <tr>
-                                            <td><img class="rounded-circle mr-2" width="30" height="30" src="assets/img/avatars/avatar2.jpeg">Angelica Ramos</td>
-                                            <td>Chief Executive Officer(CEO)</td>
-                                            <td>London</td>
-                                            <td>47</td>
-                                            <td>2009/10/09<br></td>
-                                            <td>$1,200,000</td>
-                                        </tr>
-                                        <tr>
-                                            <td><img class="rounded-circle mr-2" width="30" height="30" src="assets/img/avatars/avatar3.jpeg">Ashton Cox</td>
-                                            <td>Junior Technical Author</td>
-                                            <td>San Francisco</td>
-                                            <td>66</td>
-                                            <td>2009/01/12<br></td>
-                                            <td>$86,000</td>
-                                        </tr>
-                                        <tr>
-                                            <td><img class="rounded-circle mr-2" width="30" height="30" src="assets/img/avatars/avatar4.jpeg">Bradley Greer</td>
-                                            <td>Software Engineer</td>
-                                            <td>London</td>
-                                            <td>41</td>
-                                            <td>2012/10/13<br></td>
-                                            <td>$132,000</td>
-                                        </tr>
-                                        <tr>
-                                            <td><img class="rounded-circle mr-2" width="30" height="30" src="assets/img/avatars/avatar5.jpeg">Brenden Wagner</td>
-                                            <td>Software Engineer</td>
-                                            <td>San Francisco</td>
-                                            <td>28</td>
-                                            <td>2011/06/07<br></td>
-                                            <td>$206,850</td>
-                                        </tr>
-                                        <tr>
-                                            <td><img class="rounded-circle mr-2" width="30" height="30" src="assets/img/avatars/avatar1.jpeg">Brielle Williamson</td>
-                                            <td>Integration Specialist</td>
-                                            <td>New York</td>
-                                            <td>61</td>
-                                            <td>2012/12/02<br></td>
-                                            <td>$372,000</td>
-                                        </tr>
-                                        <tr>
-                                            <td><img class="rounded-circle mr-2" width="30" height="30" src="assets/img/avatars/avatar2.jpeg">Bruno Nash<br></td>
-                                            <td>Software Engineer</td>
-                                            <td>London</td>
-                                            <td>38</td>
-                                            <td>2011/05/03<br></td>
-                                            <td>$163,500</td>
-                                        </tr>
-                                        <tr>
-                                            <td><img class="rounded-circle mr-2" width="30" height="30" src="assets/img/avatars/avatar3.jpeg">Caesar Vance</td>
-                                            <td>Pre-Sales Support</td>
-                                            <td>New York</td>
-                                            <td>21</td>
-                                            <td>2011/12/12<br></td>
-                                            <td>$106,450</td>
-                                        </tr>
-                                        <tr>
-                                            <td><img class="rounded-circle mr-2" width="30" height="30" src="assets/img/avatars/avatar4.jpeg">Cara Stevens</td>
-                                            <td>Sales Assistant</td>
-                                            <td>New York</td>
-                                            <td>46</td>
-                                            <td>2011/12/06<br></td>
-                                            <td>$145,600</td>
-                                        </tr>
-                                        <tr>
-                                            <td><img class="rounded-circle mr-2" width="30" height="30" src="assets/img/avatars/avatar5.jpeg">Cedric Kelly</td>
-                                            <td>Senior JavaScript Developer</td>
-                                            <td>Edinburgh</td>
-                                            <td>22</td>
-                                            <td>2012/03/29<br></td>
-                                            <td>$433,060</td>
-                                        </tr>
-                                    </tbody>
-                                    <tfoot>
-                                        <tr>
-                                            <td><strong>Name</strong></td>
-                                            <td><strong>Position</strong></td>
-                                            <td><strong>Office</strong></td>
-                                            <td><strong>Age</strong></td>
-                                            <td><strong>Start date</strong></td>
-                                            <td><strong>Salary</strong></td>
-                                        </tr>
-                                    </tfoot>
-                                </table>
-                            </div>
                             <div class="row">
-                                <div class="col-md-6 align-self-center">
-                                    <p id="dataTable_info" class="dataTables_info" role="status" aria-live="polite">Showing 1 to 10 of 27</p>
-                                </div>
-                                <div class="col-md-6">
-                                    <nav class="d-lg-flex justify-content-lg-end dataTables_paginate paging_simple_numbers">
-                                        <ul class="pagination">
-                                            <li class="page-item disabled"><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
-                                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                            <li class="page-item"><a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
-                                        </ul>
-                                    </nav>
+                                <div class="col">
+                                    <div class="card shadow mb-3">
+                                        <div class="card-header py-3">
+                                            <p class="text-primary m-0 font-weight-bold">Secondary Details</p>
+                                            <p class="text-primary m-0 font-weight-bold"></p>
+                                        </div>
+                                        <div class="card-body">
+                                            <form>
+                                                <div class="form-row">
+                                                    <div class="col">
+                                                        <div class="form-group"><label for="first_name"><strong>Patient Name</strong></label><input class="form-control" type="text" placeholder="Babu rao" name="patientName" style="margin: -7px;"></div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="form-group">
+                                                            <div class="col"><label for="dob" style="height: 0px;"><strong>Date of Birth</strong></label><input class="form-control form-control-lg d-flex justify-content-center align-items-center align-content-center" type="date"
+                                                                    name="dob" style="font-size: 16px;margin: 0px;height: 38px;" required=""></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="col">
+                                                        <div id="dataTable_length" class="dataTables_length" aria-controls="dataTable"><label for="bloodGroup">&nbsp;Blood Group<select class="form-control form-control form-control-sm custom-select custom-select-sm"><option value="null" selected="">Select</option><option value="O-" selected="">O-</option><option value="O+">O+</option><option value="A-">A-</option><option value="100">A+</option><option value="B-">B-</option><option value="B+">B+</option><option value="AB-">AB-</option><option value="AB+">AB+</option></select>&nbsp;</label></div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div id="dataTable_length" class="dataTables_length" aria-controls="dataTable"><label style="margin: 2px;" for="gender">Gender&nbsp;<select class="form-control form-control form-control-sm custom-select custom-select-sm"><option value="Male" selected="">Male</option><option value="Female">Female</option><option value="Other">Rather not say</option></select>&nbsp;</label></div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group"></div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="card shadow">
+                                        <div class="card-header py-3">
+                                            <p class="text-primary m-0 font-weight-bold">Address</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <form>
+                                                <div class="form-group"><label for="address"><strong>Address</strong></label><input class="form-control" type="text" name="address"></div>
+                                                <div class="form-row">
+                                                    <div class="col">
+                                                        <div class="form-group"><label for="district"><strong>District</strong></label><input class="form-control" type="text" name="district"></div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="form-group"><label for="state"><strong>State</strong></label><input class="form-control" type="text" name="state"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group"><button class="btn btn-primary" type="submit">Save</button></div>
+                                            </form>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
